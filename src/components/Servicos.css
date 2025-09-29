@@ -1,0 +1,65 @@
+/* ====== Estilos gerais ====== */
+.servicos {
+  padding: 60px 20px;
+  background-color: #fafafa;          /* cor de fundo clara */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  height: 100vh;
+}
+
+.servicos h1 {
+  font-size: 2.5rem;
+  color: #1c2136;                     /* azul escuro */
+  margin-bottom: 10px;
+}
+
+.servicos p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ====== Cards em grid ====== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 18px rgba(228, 220, 112, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+color: #c8a54e;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ====== Efeitos de hover ====== */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px #020c798c;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 600px) {
+  .servicos h1 {
+    font-size: 2rem;
+  }
+  .servicos p {
+    font-size: 1rem;
+  }
+}

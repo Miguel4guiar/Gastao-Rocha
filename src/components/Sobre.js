@@ -31,7 +31,7 @@ function Sobre() {
         >
           <h2>Quem Somos</h2>
           <p>
-            Fundado em 20XX, o Gastão & Rocha combina experiência jurídica sólida
+            Há +35 anos ao lado de quem precisa, o Gastão & Rocha combina experiência jurídica sólida
             com atendimento humanizado e transparente. Atuamos com foco em
             resultados e na segurança jurídica de nossos clientes.
           </p>
