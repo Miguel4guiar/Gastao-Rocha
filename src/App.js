@@ -5,6 +5,8 @@ import Home from './components/home';
 import Sobre from './components/Sobre';
 import Servicos from './components/Servicos';
 import Contato from './components/Contato';
+
+
 function App() {
   return (
     <div className='App'>

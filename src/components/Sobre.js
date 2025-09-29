@@ -2,6 +2,7 @@ import React from 'react';
 import './sobre.css';
 import officeImage from '../assets/Image/negocio.jpg';
 import { motion } from 'framer-motion';
+
 function Sobre() {
     return ( 
         <div className='sobre' id='about'>
