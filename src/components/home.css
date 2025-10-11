@@ -1,29 +1,33 @@
-.home{
-    background-color: #FAF8F5;
-    height: 100vh;
+:root {
+  --vh: 100%; /* será atualizado via JS */
 }
-/* ====== Home geral ====== */
+
 .home {
+  background-color: #FAF8F5;
+  min-height: 100vh;
   font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
 }
 
 /* ====== Hero ====== */
 .hero {
-  height: 100vh;
-  background: url('../assets/Image/equipe.jpg') center/cover no-repeat;
+  height: calc(var(--vh, 1vh) * 100); /* usa altura real da viewport */
+  background: url('../assets/Image/equipe.jpg') center center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(1px);
 }
 
 .hero-content {
@@ -31,17 +35,24 @@
   z-index: 1;
   max-width: 800px;
   padding: 0 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1.2s ease-out forwards;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  animation: fadeInText 1.5s ease-in-out forwards;
 }
 
 .subtitle {
   font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInText 2s ease-in-out forwards;
+  animation-delay: 0.4s;
 }
 
 .divider {
@@ -50,10 +61,115 @@
   background: #D4AF37; /* dourado */
   margin: 1rem auto;
   border-radius: 2px;
+  opacity: 0;
+  animation: fadeInText 2.2s ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 
 .tagline {
   font-size: 1.1rem;
   font-weight: 400;
+  opacity: 0;
+  animation: fadeInText 2.5s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
+
+/* ====== Animações ====== */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== Responsividade ====== */
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 2rem;
+    background-position: center top;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+    background-position: top;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .divider {
+    width: 60px;
+    height: 2px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
+  }
+
+  .hero {
+    background-position: top center;
+  }
+}
+
 

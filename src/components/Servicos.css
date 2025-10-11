@@ -1,15 +1,15 @@
 /* ====== Estilos gerais ====== */
 .servicos {
   padding: 60px 20px;
-  background-color: #fafafa;          /* cor de fundo clara */
+  background-color: #fafafa; /* cor de fundo clara */
   text-align: center;
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  height: 100vh;
+  min-height: 100vh; /* garante altura mínima da tela */
 }
 
 .servicos h1 {
   font-size: 2.5rem;
-  color: #1c2136;                     /* azul escuro */
+  color: #1c2136; /* azul escuro */
   margin-bottom: 10px;
 }
 
@@ -39,7 +39,7 @@
 
 .card h2 {
   font-size: 1.4rem;
-color: #c8a54e;
+  color: #c8a54e;
   margin-bottom: 10px;
 }
 
@@ -55,11 +55,53 @@ color: #c8a54e;
 }
 
 /* ====== Responsividade ====== */
-@media (max-width: 600px) {
+
+/* Tablets grandes */
+@media (max-width: 992px) {
+  .servicos h1 {
+    font-size: 2.2rem;
+  }
+  .servicos p {
+    font-size: 1.05rem;
+  }
+  .cards {
+    gap: 20px;
+  }
+}
+
+/* Tablets médios / pequenos */
+@media (max-width: 768px) {
   .servicos h1 {
     font-size: 2rem;
   }
   .servicos p {
     font-size: 1rem;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  .card {
+    padding: 20px 15px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .servicos {
+    padding: 40px 15px;
+  }
+  .servicos h1 {
+    font-size: 1.7rem;
+  }
+  .servicos p {
+    font-size: 0.95rem;
+  }
+  .card {
+    padding: 15px 10px;
+  }
+  .cards {
+    grid-template-columns: 1fr; /* um card por linha para telas pequenas */
+    gap: 12px;
   }
 }
