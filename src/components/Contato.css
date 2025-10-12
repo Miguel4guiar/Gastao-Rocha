@@ -1,9 +1,23 @@
+/* ==================== VARIÁVEIS ==================== */
 :root {
   --azul-escuro: #1c2136;
   --dourado: #d4af37;
   --cinza-claro: #f4f4f4;
 }
 
+/* ==================== RESET GLOBAL ==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ==================== SEÇÃO CONTATO ==================== */
 .contato {
   max-width: 1200px;
   margin: 40px auto;
@@ -28,23 +42,24 @@
   font-size: 1.4rem;
 }
 
-/* Container flex: informações + formulário */
+/* ==================== CONTAINER FLEX ==================== */
 .contato-container {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
-/* Lado esquerdo: informações + mapa */
+/* ==================== BLOCO ESQUERDO ==================== */
 .contato-info {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 350px;
   background-color: var(--azul-escuro);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
   animation: fadeInLeft 1s ease-in;
   transition: transform 0.3s ease;
+  min-width: 0;
 }
 
 .contato-info:hover {
@@ -86,6 +101,7 @@
   text-decoration: underline;
 }
 
+/* ==================== MAPA ==================== */
 .mapa {
   margin-top: 20px;
   border-radius: 12px;
@@ -106,10 +122,9 @@
   border: none;
 }
 
-/* Lado direito: formulário */
+/* ==================== BLOCO DIREITO - FORMULÁRIO ==================== */
 .form-contato {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 350px;
   background: var(--cinza-claro);
   padding: 25px;
   border-radius: 12px;
@@ -117,6 +132,7 @@
   color: #333;
   animation: fadeInRight 1s ease-in;
   transition: transform 0.3s ease;
+  min-width: 0;
 }
 
 .form-contato:hover {
@@ -138,7 +154,7 @@
   border-radius: 8px;
   font-size: 14px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  min-height: 44px; /* acessibilidade mobile */
+  min-height: 44px;
 }
 
 .form-contato input:focus,
@@ -174,7 +190,7 @@
   background: linear-gradient(90deg, #f9d57e, var(--dourado));
 }
 
-/* ===== Animações ===== */
+/* ==================== ANIMAÇÕES ==================== */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -190,9 +206,9 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
-/* ===== Responsividade total ===== */
+/* ==================== RESPONSIVIDADE ==================== */
 
-/* Laptops médios e tablets grandes */
+/* Laptops e tablets grandes */
 @media (max-width: 1200px) {
   .contato {
     padding: 15px;
@@ -214,17 +230,18 @@
     flex-direction: column;
   }
 
+  .form-contato,
+  .contato-info {
+    width: 100%;
+    min-width: unset;
+  }
+
   .contato h2 {
     font-size: 1.9rem;
   }
 
   .contato-frase {
     font-size: 1.2rem;
-  }
-
-  .form-contato,
-  .contato-info {
-    min-width: 100%;
   }
 }
 
@@ -258,7 +275,7 @@
   .form-contato input,
   .form-contato textarea {
     font-size: 13px;
-    padding: 0px;
+    padding: 10px;
   }
 
   .form-contato button {
