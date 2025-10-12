@@ -1,6 +1,6 @@
 import React from 'react';
 import './sobre.css';
-import officeImage from '../assets/Image/negocio.jpg';
+import officeImage from '../assets/Image/gastao2.png';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 

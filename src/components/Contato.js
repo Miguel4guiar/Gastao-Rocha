@@ -6,7 +6,7 @@ function Contato() {
   return (
     <div className="contato">
        <Helmet>
-        <title>Contato - Gastão & Rocha Advocacia</title>
+        <title>Gastão & Rocha Advocacia</title>
         <meta
           name="description"
           content="Entre em contato com Gastão & Rocha Advocacia para atendimento personalizado em direito civil, trabalhista e empresarial. Estamos prontos para ajudá-lo."

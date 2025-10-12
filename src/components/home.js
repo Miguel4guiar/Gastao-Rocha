@@ -35,7 +35,7 @@ function Home() {
         />
         <meta name="author" content="Miguel Aguiar" />
 
-         <meta property="og:title" content="Contato - Gastão & Rocha Advocacia" />
+         <meta property="og:title" content="Gastão & Rocha Advocacia" />
         <meta property="og:description" content="Entre em contato com Gastão & Rocha Advocacia para atendimento personalizado em direito civil, trabalhista e empresarial." />
         <meta property="og:image" content={logoImage} />
         <meta property="og:type" content="website" />
