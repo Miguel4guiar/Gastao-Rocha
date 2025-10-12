@@ -1,10 +1,22 @@
 import React from 'react';
 import './Contato.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa';
-
+import { Helmet } from 'react-helmet';
 function Contato() {
   return (
     <div className="contato">
+       <Helmet>
+        <title>Contato - Gastão & Rocha Advocacia</title>
+        <meta
+          name="description"
+          content="Entre em contato com Gastão & Rocha Advocacia para atendimento personalizado em direito civil, trabalhista e empresarial. Estamos prontos para ajudá-lo."
+        />
+        <meta
+          name="keywords"
+          content="contato, escritório de advocacia, Gastão & Rocha, advocacia, direito civil, direito trabalhista, direito empresarial, consultoria jurídica"
+        />
+        <meta name="author" content="Miguel Aguiar" />
+      </Helmet>
       <h2>Entre em Contato</h2>
 <p className="contato-frase">Seu direito, nossa prioridade.</p>
       <div className="contato-container">

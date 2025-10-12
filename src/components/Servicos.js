@@ -1,6 +1,6 @@
 import React from 'react';
 import './Servicos.css';
-
+import { Helmet } from 'react-helmet';
 function Servicos() {
   const areas = [
     { titulo: 'Direito Civil', descricao: 'Contratos, indenizações e cobranças.' },
@@ -17,6 +17,18 @@ function Servicos() {
 
   return (
     <section className="servicos">
+       <Helmet>
+        <title>Serviços - Gastão & Rocha Advocacia</title>
+        <meta
+          name="description"
+          content="Conheça os serviços jurídicos do escritório Gastão & Rocha: direito civil, trabalhista e empresarial, sempre com foco no sucesso do cliente."
+        />
+        <meta
+          name="keywords"
+          content="serviços jurídicos, advocacia, direito civil, direito trabalhista, direito empresarial, consultoria jurídica, Gastão & Rocha"
+        />
+        <meta name="author" content="Miguel Aguiar" />
+      </Helmet>
       <h1>Nossos Serviços</h1>
       <p>Atuamos em diversas áreas do Direito, oferecendo soluções completas e personalizadas.</p>
       <div className="cards">

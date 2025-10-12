@@ -5,7 +5,7 @@ import Home from './components/home';
 import Sobre from './components/Sobre';
 import Servicos from './components/Servicos';
 import Contato from './components/Contato';
-
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
   <section className='contato' id='contact'>
     <Contato/>
   </section>
+  <Footer/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 :root {
-  --vh: 100%; /* será atualizado via JS */
+  --vh: 100%;
 }
 
 .home {
@@ -11,8 +11,8 @@
 
 /* ====== Hero ====== */
 .hero {
-  height: calc(var(--vh, 1vh) * 100); /* usa altura real da viewport */
-  background: url('../assets/Image/equipe.jpg') center center/cover no-repeat;
+  height: 100vh; /* ocupa toda a altura da tela */
+  background: url('../assets/Image/equipe.jpg') center center / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@
 @media (max-width: 992px) {
   .hero {
     padding: 2rem;
-    background-position: center top;
+    background-position: center top; /* foca na parte superior da imagem */
   }
 
   .hero h1 {
@@ -128,7 +128,7 @@
 @media (max-width: 768px) {
   .hero {
     padding: 4rem 1rem;
-    background-position: top;
+    background-position: top center; /* mantém o foco no topo */
   }
 
   .hero h1 {
@@ -171,5 +171,3 @@
     background-position: top center;
   }
 }
-
-

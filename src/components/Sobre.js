@@ -2,10 +2,23 @@ import React from 'react';
 import './sobre.css';
 import officeImage from '../assets/Image/negocio.jpg';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 function Sobre() {
     return ( 
         <div className='sobre' id='about'>
+           <Helmet>
+        <title>Sobre Nós - Gastão & Rocha Advocacia</title>
+        <meta
+          name="description"
+          content="Conheça a história do escritório Gastão & Rocha Advocacia, com experiência sólida em direito civil, trabalhista e empresarial, sempre focado no cliente."
+        />
+        <meta
+          name="keywords"
+          content="sobre o escritório, história, advocacia, Gastão & Rocha, direito civil, direito trabalhista, direito empresarial, equipe jurídica"
+        />
+        <meta name="author" content="Miguel Aguiar" />
+      </Helmet>
             {/* Mini-apresentação com efeito */}
      <motion.div 
   className="about"
