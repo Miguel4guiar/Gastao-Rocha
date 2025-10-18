@@ -81,5 +81,5 @@ Email: miguelaguiar812@gmail.com
 
 🔗 Site Online
 
-www.gastaoerocha.com.br
+gastaoerocha.com.br
  
