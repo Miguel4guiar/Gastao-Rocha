@@ -209,6 +209,9 @@ html, body {
 /* ==================== RESPONSIVIDADE ==================== */
 
 /* Laptops e tablets grandes */
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Laptops e tablets grandes */
 @media (max-width: 1200px) {
   .contato {
     padding: 15px;
@@ -224,8 +227,35 @@ html, body {
   }
 }
 
-/* Tablets */
-@media (max-width: 900px) {
+/* 🖥️ Tablets - modo retrato/paisagem (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contato-container {
+    flex-direction: row; /* mantém 2 colunas */
+    gap: 20px;
+  }
+
+  .contato-info,
+  .form-contato {
+    flex: 1 1 48%; /* ocupa quase metade do container */
+    min-width: unset;
+  }
+
+  .contato h2 {
+    font-size: 2rem;
+  }
+
+  .contato-frase {
+    font-size: 1.25rem;
+  }
+
+  .mapa iframe,
+  .mapa img {
+    height: 280px;
+  }
+}
+
+/* Tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
   .contato-container {
     flex-direction: column;
   }
@@ -311,3 +341,4 @@ html, body {
     padding: 10px;
   }
 }
+

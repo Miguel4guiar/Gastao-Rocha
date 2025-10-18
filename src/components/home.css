@@ -11,7 +11,7 @@
 
 /* ====== Hero ====== */
 .hero {
-  height: 100vh; /* ocupa toda a altura da tela */
+  height: 100vh;
   background: url('../assets/Image/FotoEquipe.png') center center / cover no-repeat;
   position: relative;
   display: flex;
@@ -58,7 +58,7 @@
 .divider {
   width: 80px;
   height: 3px;
-  background: #D4AF37; /* dourado */
+  background: #D4AF37;
   margin: 1rem auto;
   border-radius: 2px;
   opacity: 0;
@@ -98,6 +98,8 @@
 }
 
 /* ====== Responsividade ====== */
+
+/* 🖥️ Grandes telas */
 @media (min-width: 1200px) {
   .hero h1 {
     font-size: 4rem;
@@ -110,25 +112,57 @@
   }
 }
 
+/* 💻 Notebooks médios */
 @media (max-width: 992px) {
   .hero {
     padding: 2rem;
-    background-position: center top; /* foca na parte superior da imagem */
+    background-position: center top;
   }
-
   .hero h1 {
     font-size: 2.8rem;
   }
-
   .subtitle {
     font-size: 1.2rem;
   }
 }
 
+/* 📱 Tablets (modo retrato e paisagem) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 4rem 2rem;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .divider {
+    width: 70px;
+    height: 2.5px;
+  }
+
+  .tagline {
+    font-size: 1.05rem;
+  }
+
+  .hero-content {
+    max-width: 90%;
+  }
+}
+
+/* 📱 Celulares grandes */
 @media (max-width: 768px) {
   .hero {
     padding: 4rem 1rem;
-    background-position: top center; /* mantém o foco no topo */
+    background-position: top center;
   }
 
   .hero h1 {
@@ -150,6 +184,7 @@
   }
 }
 
+/* 📱 Celulares pequenos */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
@@ -171,3 +206,4 @@
     background-position: top center;
   }
 }
+

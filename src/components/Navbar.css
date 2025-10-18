@@ -1,5 +1,5 @@
 /* Navbar padrão */
-.navbar{
+.navbar {
     background-color: #1c2136;
     padding: 0px 50px;
     display: flex;
@@ -8,39 +8,39 @@
     position: relative;
 }
 
-.logo-image{
+.logo-image {
     height: 15vh;
     width: auto;
     border-radius: 8px;
     transition: height 0.3s ease;
 }
 
-.navbar-links{
+.navbar-links {
     list-style-type: none;
     display: flex;
     gap: 40px;
 }
 
-.navbar-links li a{
+.navbar-links li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.navbar-links li a:hover{
+.navbar-links li a:hover {
     color: #FBD751;
 }
 
 /* Hamburger menu */
-.hamburger{
+.hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
 }
 
-.hamburger span{
+.hamburger span {
     height: 3px;
     width: 25px;
     background: white;
@@ -49,47 +49,68 @@
 }
 
 /* Transformações do hambúrguer quando aberto */
-.hamburger.toggle span:nth-child(1){
+.hamburger.toggle span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
-.hamburger.toggle span:nth-child(2){
+.hamburger.toggle span:nth-child(2) {
     opacity: 0;
 }
-.hamburger.toggle span:nth-child(3){
+.hamburger.toggle span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsividade */
+/* ===== Responsividade ===== */
+
+/* 📱 Celulares e tablets pequenos */
 @media (max-width: 768px) {
-    .logo-image{
-        height: 10vh; /* diminui o logo em telas menores */
+    .logo-image {
+        height: 10vh;
     }
 
-    .navbar-links{
-        position: fixed; /* agora fixo na tela */
+    .navbar-links {
+        position: fixed;
         top: 0;
         right: 0;
         height: 100vh;
-        width: 60%; /* ocupa 60% da tela */
-        max-width: 200px; /* limite máximo */
+        width: 60%;
+        max-width: 200px;
         background-color: #1c2136;
         flex-direction: column;
         text-align: center;
         padding-top: 80px;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
-        z-index: 1000; /* garante que fique sobre o conteúdo */
+        z-index: 1000;
     }
 
-    .navbar-links.active{
+    .navbar-links.active {
         transform: translateX(0);
     }
 
-    .hamburger{
+    .hamburger {
         display: flex;
     }
 
-    .navbar-links li{
+    .navbar-links li {
         margin: 20px 0;
+    }
+}
+
+/* 💻 Tablets (modo retrato e paisagem) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo-image {
+        height: 12vh; /* reduz um pouco o logo */
+    }
+
+    .navbar-links {
+        gap: 25px; /* menor espaçamento entre links */
+    }
+
+    .navbar-links li a {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: none; /* mantém menu horizontal nos tablets */
     }
 }

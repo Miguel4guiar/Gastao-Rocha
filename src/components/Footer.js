@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© {new Date().getFullYear()} Miguel Aguiar. Todos os direitos reservados.</p>
+        <p>© {new Date().getFullYear()} Todos os direitos reservados.</p>
         <div className="footer-links">
           <a href="#home">Home</a>
           <a href="#about">Sobre</a>
