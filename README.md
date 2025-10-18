@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+Gastão & Rocha - Website Institucional
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório oficial do site do escritório de advocacia Gastão & Rocha, desenvolvido por Miguel Aguiar. Este site apresenta informações sobre o escritório, suas áreas de atuação e formas de contato de maneira clara, acessível e responsiva.
 
-## Available Scripts
+🌐 Visão Geral
 
-In the project directory, you can run:
+O site tem como objetivo fornecer uma presença digital profissional para o escritório, permitindo que clientes e interessados conheçam os serviços e entrem em contato facilmente.
+Principais seções:
 
-### `npm start`
+Home – Apresentação do escritório
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sobre – História, missão e valores
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Serviços – Áreas de atuação do escritório
 
-### `npm test`
+Contato – Formulário e informações de contato
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O design é responsivo, funcionando perfeitamente em desktops, tablets e smartphones.
 
-### `npm run build`
+⚙️ Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React.js – Biblioteca principal para desenvolvimento da interface
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CSS3 / Flexbox / Grid – Estilização e layout responsivo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Framer Motion – Animações suaves e interativas
 
-### `npm run eject`
+Netlify / Vercel – Hospedagem e deploy do site
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🚀 Como Rodar Localmente
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para executar o projeto em sua máquina:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone o repositório:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone https://github.com/seu-usuario/seu-repositorio.git
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Acesse a pasta do projeto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+cd seu-repositorio
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Instale as dependências:
 
-### Analyzing the Bundle Size
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Inicie o servidor de desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm start
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+O site será aberto automaticamente em http://localhost:3000
 
-### Deployment
+📦 Build para Produção
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Para gerar os arquivos prontos para produção:
 
-### `npm run build` fails to minify
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Os arquivos serão criados na pasta build/ e podem ser hospedados em qualquer servidor web.
+
+📁 Estrutura do Projeto
+/public        -> Arquivos públicos (index.html, imagens, etc)
+/src           -> Código-fonte React
+  /components  -> Componentes da interface
+  /assets      -> Imagens, ícones e mídias
+  /pages       -> Seções principais do site
+
+📝 Contato
+
+Criador do site: Miguel Aguiar
+
+LinkedIn: (https://www.linkedin.com/in/miguel-aguiar-377b00214/)
+
+GitHub: (https://github.com/Miguel4guiar)
+
+Email: miguelaguiar812@gmail.com
+
+🔗 Site Online
+
+www.gastaoerocha.com.br
+ 
