@@ -79,7 +79,4 @@ GitHub: (https://github.com/Miguel4guiar)
 
 Email: miguelaguiar812@gmail.com
 
-🔗 Site Online
-
-gastaoerocha.com.br
- 
+🔗 Site Online: (https://gastaoerocha.com.br/)
