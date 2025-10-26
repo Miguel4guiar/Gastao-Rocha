@@ -24,7 +24,7 @@ function Contato() {
         <div className="contato-info">
           <div className="info-item">
             <FaPhone className="icon" />
-            <span>Telefone: <a href="tel:+5511989922936">(11) 98992-2936</a></span>
+            <span>Telefone: <a href="tel:+5511939571446">(11) 93957-1446</a></span>
           </div>
 
           <div className="info-item">
@@ -45,7 +45,7 @@ function Contato() {
           <div className="info-item">
             <FaWhatsapp className="icon" />
             <span>
-              WhatsApp: <a href="https://wa.me/5511989922936?text=Ol%C3%A1%2C+quero+entrar+em+contato" target="_blank" rel="noopener noreferrer">Clique aqui para conversar</a>
+              WhatsApp: <a href="https://wa.me/5511939571446?text=Ol%C3%A1%2C+gostaria+de+uma+informação" target="_blank" rel="noopener noreferrer">Clique aqui para conversar</a>
             </span>
           </div>
 
